@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        
-      - name: Just to keep alive
       - run: |
           date > generated.txt
           git config user.name github-actions
